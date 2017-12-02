@@ -10,7 +10,11 @@ class Dog
   end
 
   def self.all
-    @all.each {|r| p r}
+    @@all.each {|r| p r}
+  end
+
+  def self.clear_all
+    @@all = []
   end
 
 end
